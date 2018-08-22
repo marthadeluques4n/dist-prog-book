@@ -42,7 +42,7 @@ The HTTP header is one of the primary methods of passing information about the s
 
 <h3>1.3 <em>Multiplexed Streams</em></h3>
 
-As streams are core to the implementation of HTTP/2, it is important to discuss the details of their implemenation in the protocol.  As many streams can be open simultanously from many endpoints, each stream will be in one of the following states.  Each stream is multiplexed together forming a chain of streams that are transmitted over the wire, allowing for asynchronous bi-directional concurrency to be performed by the receiving endpoint.  Below is the lifecycle of a stream {% cite RFC7540 %}:
+As streams are core to the implementation of HTTP/2, it is important to discuss the details of their implementation in the protocol.  As many streams can be open simultanously from many endpoints, each stream will be in one of the following states.  Each stream is multiplexed together forming a chain of streams that are transmitted over the wire, allowing for asynchronous bi-directional concurrency to be performed by the receiving endpoint.  Below is the lifecycle of a stream {% cite RFC7540 %}:
 
 <p align="center">
   <img src="figures/http2-stream-lifecycle.png" /><br>
